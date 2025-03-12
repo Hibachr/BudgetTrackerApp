@@ -65,15 +65,15 @@ export default function MyWalletBody() {
     return (
         <div className="flex-1 bg-[#FFFFFF]">
             {/* Header Section */}
-            <div className="mt-[24px] py-[36px] px-[48px] w-[1140px] h-[140px] gap-[95px]">
+            <div className="mt-6 md:mt-8 py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto">
                 <h1 className="font-inter font-bold text-3xl leading-10 text-[#121212]">My Wallet</h1>
                 <p className="font-inter font-normal text-sm leading-5 text-[#5B6776] mt-1">Keep track your financial plan</p>
             </div>
 
             {/* Welcome Message and Buttons Section */}
-            <div className="mx-[24px] mt-[36px] flex gap-6">
+            <div className="mx-[24px] mt-[36px] flex flex-col md:flex-row gap-6">
                 {/* Hi Adrian! Section */}
-                <div className="flex-1 w-[620px] h-[160px] px-[24px] py-[16px] gap-[21px] rounded-[6px] hover:bg-[#E2E8F0] border border-[#E2E8F0] shadow-[0px_1px_2px_0px_#1018280F,0px_1px_3px_0px_#1018281A]">
+                <div className="flex-1 w-full md:w-[620px] h-[160px] px-[24px] py-[16px] gap-[21px] rounded-[6px] hover:bg-[#E2E8F0] border border-[#E2E8F0] shadow-[0px_1px_2px_0px_#1018280F,0px_1px_3px_0px_#1018281A]">
                     <div className="flex justify-between items-center">
                         <h1 className="font-inter font-bold text-2xl leading-10 text-[#121212]">👋 Hi Adrian!</h1>
                         {/* Three Dots Icon */}
@@ -89,7 +89,7 @@ export default function MyWalletBody() {
                 </div>
 
                 {/* Buttons Section */}
-                <div className="flex-1 flex gap-4 justify-center">
+                <div className="flex-1 flex flex-col md:flex-row gap-4 justify-center">
                     {/* Send a Payment Button */}
                     <button
                         onClick={() => setShowSendPaymentForm(true)} // Show Send Payment Form
@@ -112,7 +112,7 @@ export default function MyWalletBody() {
 
             {/* Financial Plans Section */}
             <div className="mt-[36px] mx-[24px]">
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {financialPlans.map((plan, index) => (
                         <div key={index} className="p-6 bg-white rounded-lg hover:bg-[#E2E8F0] border border-[#E2E8F0] shadow-[0px_1px_2px_0px_#1018280F,0px_1px_3px_0px_#1018281A]">
                             <div className="flex items-center gap-3">
@@ -150,7 +150,7 @@ export default function MyWalletBody() {
             {/* Create New Wallet Button */}
             <button
                 onClick={() => setShowCreateNewWalletForm(true)} // Show Create New Wallet Form
-                className="flex items-center w-[1140px] h-[124px] my-8 justify-center gap-2 p-4 bg-[#F7F8FD] text-[#4F46E5] rounded-m font-inter font-semibold hover:bg-[#D3D7E8] transition duration-300 shadow-[0px_1px_2px_0px_#1018280F,0px_1px_3px_0px_#1018281A]">
+                className="flex items-center w-full md:w-[1140px] h-[124px] my-8 justify-center gap-2 p-4 bg-[#F7F8FD] text-[#4F46E5] rounded-m font-inter font-semibold hover:bg-[#D3D7E8] transition duration-300 shadow-[0px_1px_2px_0px_#1018280F,0px_1px_3px_0px_#1018281A]">
                 <Image
                     src="/icons/plus.png"
                     alt="Create a new wallet"
