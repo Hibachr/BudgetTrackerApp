@@ -4,3 +4,6 @@
 * {
   font-family: 'Inter', sans-serif;
 }
+html, body {
+  overflow: hidden;
+}

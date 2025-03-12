@@ -10,7 +10,7 @@ const menuItems = [
 
 export default function SideBar() {
     return (
-        <div className="w-[300px] max-w-[21%] h-screen bg-[#080325] text-white flex flex-col py-6 px-5">
+        <div className="w-[300px] max-w-[21%] h-screen bg-[#080325] text-white flex flex-col py-6 px-5 max-2xl:hidden">
             {/* Logo */}
             <div className="mb-6">
                 <Image src="/images/Tracker.png" alt="Logo" width={161} height={54} />
