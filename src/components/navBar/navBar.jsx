@@ -68,14 +68,21 @@ export default function NavBar() {
 
                 {/* Footer Section */}
                 <div className="mb-[40%] mt-8 space-y-6 px-3">
+                    {/* LogOut */}
+                    <Link href={"/login"}>
+                    <div className="flex items-center gap-3 text-sm font-semibold text-[#C9C9C9] pb-8">
+                    <Image src="/icons/logout.png" alt="Settings" width={32} height={32} />
+                    <span>Log Out</span>
+                    </div>
+                    </Link>   
                     {/* Settings */}
-                    <div className="flex items-center gap-3 text-sm font-semibold text-[#C9C9C9] border-b border-[#C9C9C9] pb-4">
+                    <div className="flex items-center gap-3 text-sm font-semibold text-[#C9C9C9] border-b border-[#C9C9C9] pb-6">
                         <Image src="/icons/settings.png" alt="Settings" width={24} height={24} />
                         <span>Settings</span>
                     </div>
 
                     {/* Profile */}
-                    <Link href="/profile" className="flex items-center gap-3 text-sm text-[#C9C9C9] font-semibold pt-4 cursor-pointer" onClick={() => setIsOpen(false)}>
+                    <Link href="/profile" className="flex items-center gap-3 text-sm text-[#C9C9C9] font-semibold pt-2 cursor-pointer" onClick={() => setIsOpen(false)}>
                         <Image src="/images/profile.png" alt="User" width={32} height={32} className="rounded-full" />
                         <span>Adrian Tra</span>
                     </Link>

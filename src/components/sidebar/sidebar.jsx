@@ -49,7 +49,7 @@ export default function SideBar() {
                 
                 {/* LogOut */}
                 <Link href={"/login"}>
-                <div className="flex items-center gap-3 text-sm font-semibold text-[#C9C9C9] pb-6">
+                <div className="flex items-center gap-3 text-sm font-semibold text-[#C9C9C9] pb-8">
                     <Image src="/icons/logout.png" alt="Settings" width={32} height={32} />
                     <span>Log Out</span>
                 </div>
