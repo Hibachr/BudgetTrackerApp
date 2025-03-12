@@ -29,7 +29,10 @@ export default function Login() {
             <div className='md:ml-[100px] ml-14 mt-[50px] max-md:pt-30 flex md:justify-center h-[80vh] w-[70vh] flex-col'>
                 <h1 className='font-semibold text-3xl'>Sign in</h1>
                 <div className="flex flex-row gap-0.5 mt-4 text-[15px] text-gray-700">
-                <p>Don't have account?</p> <Link href="" className='cursor-pointer font-semibold text-blue-700'><h3>Craete Account</h3></Link>
+                <p>Don't have account?</p> 
+                <Link href="/createAcc" className='cursor-pointer font-semibold text-blue-700'>
+                <h3>Create Account</h3></Link>
+
                 </div>
 
                 <Input placeholder="Email Address" type="text" width="70vh"  resp="1/2"/>

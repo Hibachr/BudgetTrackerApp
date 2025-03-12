@@ -29,7 +29,8 @@ export default function CraeteAcc() {
             <div className='md:ml-[100px] ml-14 mt-[50px] max-md:pt-30 flex md:justify-center h-[80vh] w-[70vh] flex-col'>
                 <h1 className='font-semibold text-3xl'>Create account</h1>
                 <div className="flex flex-row gap-0.5 mt-4 text-[15px] text-gray-700">
-                <p>Already have account? </p> <Link href="" className='cursor-pointer font-semibold text-blue-700'><h3>Log in</h3></Link>
+                <p>Already have account? </p>
+                <Link href="/login" className='cursor-pointer font-semibold text-blue-700'><h3>Log in</h3></Link>
                 </div>
                 <div className='flex gap-[20px] max-md:gap-0.5 flex-row'>
                 <Input placeholder="Full Name" type="text" width="1/2" resp="1/4"/>

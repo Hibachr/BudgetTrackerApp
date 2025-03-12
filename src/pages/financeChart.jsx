@@ -10,7 +10,7 @@ export default function FinanceChart() {
   const [duration, setDuration] = useState("This Month"); // Stores selected time duration
 
   return (
-    <div className="flex flex-col md:flex-row ">
+    <div className="flex flex-col md:flex-row md:pl-[300px]">
       <SideBar />
       <NavBar/>
 
