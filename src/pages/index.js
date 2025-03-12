@@ -1,9 +1,12 @@
-import MyWallet from "./my-wallet/my-wallet";
+
+// import App from "next/app";
+import App from "./_app";
+
 
 export default function Home() {
   return (
     <>
-    <MyWallet />
+      <App/>
     </>
   );
 }
