@@ -1,9 +1,9 @@
-import MyWallet from "./my-wallet";
+import Login from "./login/login";
 
 export default function Home() {
   return (
     <>
-    <MyWallet />
+    <Login />
     </>
   );
 }
