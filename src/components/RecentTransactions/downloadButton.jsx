@@ -1,26 +1,25 @@
-export default function DownloadButton() {
-    const handleDownload = async () => {
-      const response = await fetch('/api/download-excel'); 
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      
+
+  export default function DownloadButton() {
+    const handleDownload = () => {
+      const fileUrl = '/transactions.xlsx'; // Direct path
       const a = document.createElement('a');
-      a.href = url;
-      a.download = 'transactions.xlsx'; 
+      a.href = fileUrl;
+      a.download = 'transactions.xlsx';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
     };
   
     return (
-      <button 
-        onClick={handleDownload} 
-        className="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition"
-      >
-        Download the Excel File
-      </button>
+      <div className="pl-6">
+            <button 
+              onClick={handleDownload} 
+              className="bg-[#4F46E5] h-[55px] w-3xs text-white px-4 py-2  font-medium hover:bg-[#6360f5] transition font-inter font-semibold text-[18px] leading-[24px] tracking-[-0.02em] rounded-2xl pl-7"
+            >
+              Download the Excel File
+            </button>
+      </div>
+      
     );
   }
-
-  
   
