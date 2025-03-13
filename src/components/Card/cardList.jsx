@@ -23,23 +23,9 @@ export default function CardList() {
   
   
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 ">
 
-            {/* <div className="flex items-center justify-between px-7 border border-gray-200 p-2 w-lg h-[60px] rounded-md hover:bg-[#E0E3F0] "> 
-               
-               
-                 <button
-                    onClick={handleOpenForm}
-                    className="font-inter font-semibold text-[16px] leading-[24px] tracking-[-0.01em]"
-                >
-                    Add Primary Card
-                </button>
-               
-                
-                 <div><Image src="/icons/Icon2.png" alt="Logo" width={10} height={15} /></div>
-               
-            </div>
-             */}
+           
              <AddPrimaryCardButton/>
 
 

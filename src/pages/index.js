@@ -1,10 +1,10 @@
 
-// import App from "next/app";
 
 import App from "./_app";
-
-
-
+import FinanceChart from "./financeChart";
+import Login from "./login";
+import MyWallet from "./my-wallet";
+import Profile from "./profile";
 
 export default function Home() {
   return (

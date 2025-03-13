@@ -42,7 +42,7 @@ export default function TransactionsTable({ currentPage, pageSize }) {
       </div>
 
       {/*  Table */}
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto w-full">
         <table className="w-full rounded-lg shadow-md">
           <thead>
             <tr className="bg-gray-100 text-gray-700">
