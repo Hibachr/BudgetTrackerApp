@@ -132,62 +132,6 @@ export default function CreateNewCardForm({ onClose }) {
                         </select>
                     </div>
 
-                    {/* Icon Selection */}
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium text-[#5B6776]">Card Icon</label>
-                        <div className="mt-1 flex items-center gap-4">
-                            {/* Emoji Picker */}
-                            <div className="flex items-center gap-2">
-                                <button
-                                    type="button"
-                                    onClick={() => handleEmojiSelect('💳')}
-                                    className="p-2 bg-[#F7F8FD] rounded-md hover:bg-[#E2E8F0]"
-                                >
-                                    💳
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleEmojiSelect('🏦')}
-                                    className="p-2 bg-[#F7F8FD] rounded-md hover:bg-[#E2E8F0]"
-                                >
-                                    🏦
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleEmojiSelect('💵')}
-                                    className="p-2 bg-[#F7F8FD] rounded-md hover:bg-[#E2E8F0]"
-                                >
-                                    💵
-                                </button>
-                            </div>
-
-                            {/* File Upload */}
-                            <label className="flex items-center gap-2 p-2 bg-[#F7F8FD] rounded-md hover:bg-[#E2E8F0] cursor-pointer">
-                                <input
-                                    type="file"
-                                    accept="image/*"
-                                    onChange={handleIconUpload}
-                                    className="hidden"
-                                />
-                                <span className="text-sm text-[#5B6776]">Upload Icon</span>
-                            </label>
-                        </div>
-
-                        {/* Icon Preview */}
-                        {iconPreview && (
-                            <div className="mt-2">
-                                <p className="text-sm text-[#5B6776]">Selected Icon:</p>
-                                <div className="mt-1">
-                                    {typeof iconPreview === 'string' && iconPreview.startsWith('data:image') ? (
-                                        <img src={iconPreview} alt="Card Icon" className="w-10 h-10 rounded-full" />
-                                    ) : (
-                                        <span className="text-2xl">{iconPreview}</span>
-                                    )}
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
                     {/* Buttons */}
                     <div className="flex justify-end gap-2">
                         <button
